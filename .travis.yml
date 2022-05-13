@@ -1,0 +1,10 @@
+language: java
+
+jdk: openjdk11
+
+script:
+  - echo "Start build"
+  - mvn clean
+  - echo "Cleaned"
+  - mvn package
+  - echo "Finished!"
