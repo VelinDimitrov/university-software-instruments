@@ -1,13 +1,11 @@
 language: java
-
-jdk: openjdk11
 dist: trusty
-before_install:
-  - chmod +x mvnw
+jdk:
+  -openjdk11
+beforeInstall:
+  -mvn clean
 
 script:
-  - echo "Start build"
-  - mvn clean
-  - echo "Cleaned"
-  - mvn package
-  - echo "Finished!"
+    - java --version
+    - ./mvnw clean install
+    - ./mvnw test
