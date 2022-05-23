@@ -8,5 +8,5 @@ script:
     - ./mvnw clean install
     - ./mvnw test
     
- before_install:
-  - chmod +x mvnw
+before_install:
+    - chmod +x mvnw
