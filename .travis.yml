@@ -1,6 +1,9 @@
 language: java
 
 jdk: openjdk11
+dist: trusty
+before_install:
+  - chmod +x mvnw
 
 script:
   - echo "Start build"
